@@ -245,7 +245,7 @@
      color: black; 
 }
 .active > span {
-    color: black !important;
+    color: white !important;
 }
 /* .active > .sidebar_btn_circle {
     position: absolute;
@@ -295,7 +295,7 @@
     
 }
 .sidebar_btn:hover > span {
-    color: black !important;
+    color: white !important;
 }
 .sidebar_btn > span {
     display: flex;
