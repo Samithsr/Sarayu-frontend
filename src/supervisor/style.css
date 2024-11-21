@@ -1,0 +1,123 @@
+/* note model starts here */
+.supervisor_note_model_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.note_close_icon {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    font-size: 18px;
+}
+.supervisor_note_model_container > div {
+    width: 80vw;
+    background: rgba(255, 0, 0, 0.762);
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.855);
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: relative;
+}
+.supervisor_note_model_container > div > p {
+    margin: 0;
+}
+/* note model ends here */
+
+.supervisor_display_all_operators_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px !important;
+    transition: all 0.3s ease-in-out;
+    margin: 0 !important;
+}
+.supervisor_display_all_operators_container > p:first-child {
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.supervisor_display_all_operators_container > div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.843);
+    font-size: 14px;
+    box-shadow: 0 0 2px rgb(109, 108, 108);
+    background: rgb(13, 13, 13);
+    position: relative;
+}
+.supervisor_display_all_operators_container > div > div:last-child {
+    background: rgba(183, 5, 142, 0.928);
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.supervisor_display_all_operators_container > div > div:last-child > img {
+    width: 30px;
+    height: 30px;
+}
+
+/* change password section starts here */
+.supervisor_change_password_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+.supervisor_change_password_section > p:first-child {
+    color: rgb(218, 218, 218);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.supervisor_change_password_section > section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.supervisor_change_password_section > section > div > input {
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    padding: 0 20px;
+    background: rgb(26, 27, 26);
+    color: white;
+    border: none;
+    box-shadow: 0 0 2px rgb(139, 139, 139);
+    border: 1px solid black;
+}
+.supervisor_change_password_section > section > div > input:focus {
+    outline: none;
+    border: 1px solid rgb(109, 109, 109);
+}
+.supervisor_change_password_section > section > div > label {
+    color: rgb(225, 225, 225);
+    padding-left: 15px;
+}
+.supervisor_change_password_section > section > div:last-child {
+    display: flex;
+    justify-content: center;
+}
+.supervisor_change_password_section > section > div:last-child > button {
+    width: 60%;
+    padding: 10px 5px;
+    border-radius: 50px;
+    background: rgb(26, 27, 26);
+    color: white;
+    border: none;
+    background: rgba(0, 128, 0, 0.823);
+}
+/* change password section ends here */

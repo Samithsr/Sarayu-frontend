@@ -1,0 +1,167 @@
+.manager_dashboard_main_container {
+    background: black;
+    min-height: 100vh;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.manager_navbar_nav {
+    display: flex;
+    justify-content: space-between;
+    /* background: linear-gradient(to top, rgb(17, 17, 61), rgb(11, 11, 66)); */
+    background: rgb(13, 13, 13);
+    color: white;
+    align-items: center;
+    padding: 10px 40px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.manager_navbar_nav > div > p {
+    margin: 0;
+    font-size: 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.manager_navbar_nav_desktop_view_links {
+    display: flex;
+    gap: 60px;
+}
+.manager_navbar_nav_desktop_view_links > p {
+    margin: 0;
+    font-size: 16px !important;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.manager_navbar_nav_desktop_view_links > p:hover {
+    border-top: 3px solid rgb(132, 0, 255);
+    border-bottom: 3px solid rgb(132, 0, 255);
+}
+.manager_navbar_nav_desktop_view_links_active {
+    border-top: 3px solid rgb(132, 0, 255) !important;
+    border-bottom: 3px solid rgb(132, 0, 255) !important;
+}
+/* use section body container */
+.user_section_body_container {
+    position: relative;
+}
+/* user details card */
+.user_details_card_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    height: 100vh;
+    background: black;
+}
+.user_details_card_container > div {
+    width: 80vw;
+    color: #7e8590;
+    background-color: rgba(36, 40, 50, 1);
+    background-image: linear-gradient(139deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 0%, rgba(37, 28, 40, 1) 100%);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+}
+.user_details_card_container > div::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: black;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    border-radius: 50%;
+}
+.user_details_card_container > div::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: black;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    border-radius: 50%;
+}
+.user_details_card_container > div > button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 22px;
+    bottom: 0;
+    transform: translateY(-10px);
+}
+/* test footer navigationbar */
+.footer_navigationbar_mobile_view {
+    height: 70px;
+    /* background: #1d1f24; */
+    background: rgb(13, 13, 13);
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    /* border-bottom-left-radius: 50px; */
+    /* border-bottom-right-radius: 50px; */
+}
+.footer_navigationbar_mobile_view > div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: center;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+.footer_navigationbar_mobile_view_center_icon {
+    width: 45px !important;
+    height: 45px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px !important;
+    color: white;
+}
+.footer_navigationbar_mobile_view_active {
+    background: rgba(0, 0, 0, 0.528) !important;
+    height: 50px !important;
+    width: 100px !important;
+    border-radius: 50px !important;
+    color: rgba(29, 210, 1, 0.912) !important;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 20px !important;
+}
+.footer_navigationbar_mobile_view_active > span {
+    font-size: 14px;
+}
+@media (width < 790px) {
+    .manager_navbar_nav_desktop_view_links {
+        display: none;
+    }
+    .manager_navbar_nav_mobile_view_open_btn {
+        display: block;
+    }
+}
+@media (width > 790px) {
+    .manager_navbar_nav_mobile_view_links {
+        display: none;
+    }
+}
