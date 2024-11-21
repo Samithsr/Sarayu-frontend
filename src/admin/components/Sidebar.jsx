@@ -44,29 +44,30 @@ const Sidebar = () => {
             title="Live"
           />
           <SidebarBtn
-            path="/dashboard/dashboard"
+            path="/dashboards/dashboard"
             icon={<MdSpaceDashboard />}
             title="Dashboard"
           />
           <SidebarBtn
-            path="/dashboard/devices"
+            path="/dashboards/devices"
             icon={<MdDevices />}
-            title="Devices"
+            title="Device"
           />
           <SidebarBtn
-            path="/dashboard/reports"
+            path="/dashboards/reports"
             icon={<BiSolidReport />}
             title="Reports"
           />
           <SidebarBtn
-            path="/dashboard/users"
+            path="/dashboards/users"
             icon={<FaUsersCog />}
             title="Users"
           />
           <SidebarBtn
-            path="/dashboard/inbox"
+            path="/dashboards/inbox"
             icon={<MdEmail />}
             title="Inbox"
+
           />
         </div>
       </section>

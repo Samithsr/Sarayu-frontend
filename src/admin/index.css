@@ -1,17 +1,22 @@
 .admin_mainSection_container {
     /* background: linear-gradient(to top right, #2e2e3a, #454454); */
 }
-.admin_container {
+ .admin_container {
     display: grid;
     overflow: hidden;
     grid-template-columns: 18% 82%;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 14px black;
 }
 
 /* Main Section css */
-.dashboard_main_section_container {
-    height: 100vh;
+ .dashboard_main_section_container {
+    height: 97vh;
     background: white;
-}
+}  
+
+
 
 /* Mail css */
 .admin_mail_container_inbox_table_headers {
@@ -294,11 +299,11 @@
 .send_reply_btn:disabled {
     border: 1px solid gray;
     background-color: gray;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: not-allowed;
 }
 .send_reply_btn:hover:not(:disabled) {
-    background: white;
+    background:rgb(255, 255, 255);
     color: black;
 }
 .individual_mail_reply_icon {
@@ -703,7 +708,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .sidebar_buttons_container{
@@ -711,6 +716,13 @@
     flex-direction: column;
     align-items: center;
     margin-left: 40px;
-    color: white;
-    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.sidebar_lastsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
 }
