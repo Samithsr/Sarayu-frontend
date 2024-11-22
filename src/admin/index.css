@@ -714,6 +714,7 @@
 .sidebar_buttons_container{
     display: flex;
     flex-direction: column;
+    margin-top: 100px; 
     align-items: center;
     margin-left: 40px;
     color: rgb(255, 255, 255);
@@ -722,7 +723,71 @@
 .sidebar_lastsection{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: center; 
+    margin: 30% 0; 
     color: rgb(255, 255, 255);
 }
+.tooltip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.notititle {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    /* background-color: #007BFF; */
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notititle:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notititle:active {
+    background-color: #003f7f;
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.icon.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+/* .notibody div {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    padding: 10px;
+    background-color: #007BFF; /* Matching blue background for the email */
+    /* border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; */
+ 
+
+/* .notibody div span {
+    font-size: 14px;
+    font-weight: bold;
+} */

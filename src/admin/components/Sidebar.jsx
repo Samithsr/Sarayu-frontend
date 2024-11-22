@@ -38,36 +38,35 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="sidebar_buttons_container">
-          <SidebarBtn
+          {/* <SidebarBtn
             path="/dashboard/live"
             icon={<IoLocationSharp />}
             title="Live"
-          />
+          /> */}
           <SidebarBtn
-            path="/dashboards/dashboard"
+            path="/dashboard/dashboard"
             icon={<MdSpaceDashboard />}
             title="Dashboard"
           />
-          <SidebarBtn
-            path="/dashboards/devices"
+          {/* <SidebarBtn
+            path="/dashboard/devices"
             icon={<MdDevices />}
-            title="Device"
-          />
-          <SidebarBtn
-            path="/dashboards/reports"
+            title="Devices"
+          /> */}
+          {/* <SidebarBtn
+            path="/dashboard/reports"
             icon={<BiSolidReport />}
             title="Reports"
-          />
+          /> */}
           <SidebarBtn
-            path="/dashboards/users"
+            path="/dashboard/users"
             icon={<FaUsersCog />}
             title="Users"
           />
           <SidebarBtn
-            path="/dashboards/inbox"
+            path="/dashboard/inbox"
             icon={<MdEmail />}
             title="Inbox"
-
           />
         </div>
       </section>
@@ -79,15 +78,10 @@ const Sidebar = () => {
               <div class="notiglow"></div>
               <div class="notiborderglow"></div>
               <div class="notititle">
-                {user?.name}{" "}
+                <span>Logout</span>
                 <span style={{ transform: "translateY(-2px)" }}>
                   <GrLogout />
                 </span>
-              </div>
-              <div class="notibody">
-                <div>
-                  <span>{user?.email}</span> <br />
-                </div>
               </div>
             </div>
           </div>
